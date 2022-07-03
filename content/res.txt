@@ -1,0 +1,2 @@
+aaa
+here is the res: hey it's first txt file,hey it's second txt file

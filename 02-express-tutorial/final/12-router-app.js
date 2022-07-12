@@ -8,7 +8,7 @@ const auth = require('./routes/auth')
 app.use(express.static('./methods-public'))
 // parse form data
 app.use(express.urlencoded({ extended: false }))
-// parse json
+// parse json 
 app.use(express.json())
 
 app.use('/api/people', people)

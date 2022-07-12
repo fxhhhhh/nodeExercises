@@ -12,7 +12,7 @@ app.use(express.static('./public'))
 //   SSR
 // })
 
-app.all('*', (req, res) => {
+app.all('*', (req , res) => {
   res.status(404).send('resource not found')
 })
 

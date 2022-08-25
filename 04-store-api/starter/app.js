@@ -1,6 +1,6 @@
 require('dotenv').config()
 //async errors
-
+require('express-async-errors');
 
 const express = require('express');
 const app = express();
@@ -23,7 +23,7 @@ app.use('/api/v1/products',productsRouter)
 
 
 
-const port = process.env.port || 5000
+const port = 3001
 
 //products route
 
@@ -34,7 +34,7 @@ const start = async()=>{
     try {
         //connect DB
         await connectDB(process.env.MONGO_URI)
-        app.listen(port,console.log(`Server is listening`))
+        app.listen(port,console.log(`Server is listening 3001`))
     } catch (error) {
         console.log(error);
     }
